@@ -1,31 +1,16 @@
 /* Contenedor del carrusel */
 .swiper-container {
-    padding-top: 10vh; /* Espacio superior */
-    width: 100%; /* Ocupa todo el ancho */
-    height: 85vh; /* Ocupa todo el alto de la ventana */
-  }
+    flex: 1;
+    /*width: 100%; /* Ocupa todo el ancho del carrusel */
+    /*height: 100%; /* Ajusta su altura a la restricción de la segunda fila */
+    /*display: block; /* Asegura que el carrusel respete las dimensiones del contenedor */
+    background-color: rgb(253, 255, 255);
+ }
   
   /* Estiliza las imágenes */
   .swiper-image {
-    width: 100%; /* Ajusta al ancho del contenedor */
-    height: 100%; /* Ajusta al alto del contenedor */
-    object-fit: cover; /* Escala las imágenes sin deformarlas */
-  }
-  
-
-/*.carrusel {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    height: 90vh; 
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
   }
   
-  .carrusel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Movimiento suave 
-  }
-  
-  .carrusel-images div {
-    flex-shrink: 0;
-    width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor 
-  }
-  */

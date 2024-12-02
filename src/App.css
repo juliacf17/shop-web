@@ -1,69 +1,39 @@
-.App {
-  text-align: center;
-}
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+/* Encabezado: Parte superior del 15% */
+
+.App{
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  margin:0; 
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  flex: 0 0 10%; /* No se puede crecer ni encoger y ocupa exactamente el 15% */
+  margin-bottom: 4px;
+  background-color: #252525;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: left;
+  padding-left: 10%;
+  font-size: calc(10px + 2vmin); /* Calcula el tamaño de la letra en función del tamaño de la pantalla */
+  color: white;
+}
+
+.main{
+  flex: 0 0 90%; /* No se puede crecer ni encoger y ocupa exactamente el 75% */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);   /* Cacula el tamaño de la letra en función del tamaño de la pantalla */
-  color: white;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
-.nav-links {
-  z-index: 2; /* Asegura que los enlaces estén encima del fondo */
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  background-color: black;
-}
-
-.nav-links li a {
-  text-decoration: none;
+/* Pie de página: Parte inferior del 10% */
+.footer {
+  flex: 0 0 5%; /* No se puede crecer ni encoger y ocupa exactamente el 10% */
+  background-color: #252525;
   color: white;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #61dafb;
-}
-
-/* Fondo animado */
-.carrusel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Para contener varias imágenes */
- height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
 }
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin: 50px 0;
-}
-
-h1 {
-  color: #333;
-}
-
